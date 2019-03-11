@@ -42,7 +42,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-For some reason glide does not work on the android emulator, but it does work on my phone. Haven't been able to figure out why yet.
+For some reason glide does not work on the android emulator, but it does work on my phone. Haven't been able to figure out why yet. This is why on the emulator you cannot see the user images.
 
 ## Open-source libraries used
 
