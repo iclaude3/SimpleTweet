@@ -2,7 +2,7 @@
 
 **Twitter** is an android app that allows a user to view his Twitter timeline. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
 
-Time spent: **3** hours spent in total
+Time spent: **4** hours spent in total
 
 ## User Stories
 
@@ -30,7 +30,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] Added dividers between the posts on the newsfeed
 
 ## Video Walkthrough
 
@@ -42,7 +42,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-For some reason glide does not work on the android emulator, but it does work on my phone. Haven't been able to figure out why yet.
+For some reason glide does not work on the android emulator, but it does work on my phone. Haven't been able to figure out why yet. This is why on the emulator you cannot see the user images.
 
 ## Open-source libraries used
 
@@ -51,8 +51,7 @@ For some reason glide does not work on the android emulator, but it does work on
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
-
+    Copyright [2019] [Claudia M Bandali]
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
