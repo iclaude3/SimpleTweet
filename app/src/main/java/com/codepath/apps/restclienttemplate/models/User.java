@@ -1,15 +1,26 @@
 package com.codepath.apps.restclienttemplate.models;
 
+import android.arch.persistence.room.ColumnInfo;
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
 import android.util.Log;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+@Entity
 public class User {
 
+    @PrimaryKey(autoGenerate = true)
+    Long id;
+
+    @ColumnInfo
     public String name;
+    @ColumnInfo
     public long uid;
+    @ColumnInfo
     public String screenName;
+    @ColumnInfo
     public String profileImageUrl;
 
     public static User fromJson(JSONObject jsonObject) throws JSONException {

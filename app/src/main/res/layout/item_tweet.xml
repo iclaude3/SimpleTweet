@@ -22,6 +22,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/ivProfileImage"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
         tools:text="ClaudiaMB" />
 
     <TextView
@@ -30,7 +33,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvScreenName"
         android:layout_toEndOf="@+id/ivProfileImage"
-        tools:text="This is my tweet" />
+        android:autoLink="all"
+        tools:text="This is my tweet"
+        android:drawableBottom="@drawable/ic_vector_heart_stroke"
+        android:drawableTint="#ff1da1f2"
+        android:drawablePadding="8dp"/>
 
     <TextView
         android:id="@+id/tvTimeStamp"
