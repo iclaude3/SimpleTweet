@@ -36,10 +36,10 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
 
 		final Tweet tweet = new Tweet();
 
-		tweetDao = ((TwitterApp) getApplicationContext()).getMyDatabase().tweetDao();
-		userDao = ((TwitterApp) getApplicationContext()).getMyDatabase().userDao();
+//		tweetDao = ((TwitterApp) getApplicationContext()).getMyDatabase().tweetDao();
+//		userDao = ((TwitterApp) getApplicationContext()).getMyDatabase().userDao();
 
-		task.execute(tweet);
+//		task.execute(tweet);
 	}
 
 

@@ -7,8 +7,10 @@ import android.util.Log;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 @Entity
+@Parcel
 public class User {
 
     @PrimaryKey(autoGenerate = true)
@@ -22,6 +24,11 @@ public class User {
     public String screenName;
     @ColumnInfo
     public String profileImageUrl;
+
+    // empty constructor needed by the Parceler library
+    public User() {
+
+    }
 
     public static User fromJson(JSONObject jsonObject) throws JSONException {
         User user = new User();

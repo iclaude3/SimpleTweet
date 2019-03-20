@@ -34,10 +34,7 @@
         android:layout_below="@+id/tvScreenName"
         android:layout_toEndOf="@+id/ivProfileImage"
         android:autoLink="all"
-        tools:text="This is my tweet"
-        android:drawableBottom="@drawable/ic_vector_heart_stroke"
-        android:drawableTint="#ff1da1f2"
-        android:drawablePadding="8dp"/>
+        tools:text="This is my tweet"/>
 
     <TextView
         android:id="@+id/tvTimeStamp"

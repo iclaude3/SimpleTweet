@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "230efec68d0a30fc54af202ecb822310",
+    "identityHash": "fbabea9ac459144cf1b91769fc4d13dd",
     "entities": [
       {
         "tableName": "User",
@@ -89,7 +89,16 @@
           ],
           "autoGenerate": true
         },
-        "indices": [],
+        "indices": [
+          {
+            "name": "index_Tweet_userID",
+            "unique": false,
+            "columnNames": [
+              "userID"
+            ],
+            "createSql": "CREATE  INDEX `index_Tweet_userID` ON `${TABLE_NAME}` (`userID`)"
+          }
+        ],
         "foreignKeys": [
           {
             "table": "User",
@@ -107,7 +116,7 @@
     ],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"230efec68d0a30fc54af202ecb822310\")"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"fbabea9ac459144cf1b91769fc4d13dd\")"
     ]
   }
 }

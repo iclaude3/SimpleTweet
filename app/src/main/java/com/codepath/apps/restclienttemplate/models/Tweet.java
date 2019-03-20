@@ -10,8 +10,10 @@ import com.codepath.apps.restclienttemplate.TimeFormatter;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 @Entity(foreignKeys = @ForeignKey(entity=User.class, parentColumns="id", childColumns="userID"))
+@Parcel
 public class Tweet {
     @PrimaryKey(autoGenerate = true)
     Long id;
@@ -22,10 +24,15 @@ public class Tweet {
     public long uid;
     @ColumnInfo
     public String createdAt;
-    @ColumnInfo
+    @ColumnInfo(index = true)
     public Long userID;
     @Ignore
     public User user;
+
+    // empty constructor needed by the Parceler library
+    public Tweet() {
+
+    }
 
     public static Tweet fromJson(JSONObject jsonObject) throws JSONException {
         Tweet tweet = new Tweet();

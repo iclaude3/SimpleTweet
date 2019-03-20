@@ -4,16 +4,14 @@ import android.arch.persistence.room.Database;
 import android.arch.persistence.room.RoomDatabase;
 
 import com.codepath.apps.restclienttemplate.models.Tweet;
-import com.codepath.apps.restclienttemplate.models.TweetDao;
 import com.codepath.apps.restclienttemplate.models.User;
-import com.codepath.apps.restclienttemplate.models.UserDao;
 
 @Database(entities={User.class, Tweet.class}, version=1)
 public abstract class MyDatabase extends RoomDatabase {
-    // Declare data access object as abstract
-    public abstract UserDao userDao();
-    public abstract TweetDao tweetDao();
-
-    // Database name to be used
-    public static final String NAME = "TweetDataBase";
+//    // Declare data access object as abstract
+//    public abstract UserDao userDao();
+//    public abstract TweetDao tweetDao();
+//
+//    // Database name to be used
+//    public static final String NAME = "TweetDataBase";
 }
